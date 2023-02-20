@@ -1,6 +1,12 @@
+import type { Monster } from "../../App";
+
 import "./card.styles.css";
 
-export const Card = ({ monster }) => {
+type CardProps = {
+  monster: Monster;
+};
+
+export const Card = ({ monster }: CardProps) => {
   const { id, name, email } = monster;
 
   return (
